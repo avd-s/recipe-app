@@ -3,8 +3,8 @@ import Receipe from "./receipe";
 import "./App.css";
 
 const App = () => {
-  const APP_ID = "your api id";
-  const APP_KEY = "your api key";
+  const APP_ID = "a5621491";
+  const APP_KEY = "6f9fe70284d1209302eee026adcbe6f8";
 
   const [receipes, setreceipes] = useState([]);
   const [search, setSearch] = useState("");
