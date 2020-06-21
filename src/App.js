@@ -3,8 +3,8 @@ import Receipe from "./receipe";
 import "./App.css";
 
 const App = () => {
-  const APP_ID = "a5621491";
-  const APP_KEY = "6f9fe70284d1209302eee026adcbe6f8";
+  const APP_ID = "your api id";
+  const APP_KEY = "your api key";
 
   const [receipes, setreceipes] = useState([]);
   const [search, setSearch] = useState("");
@@ -12,7 +12,7 @@ const App = () => {
 
   useEffect(() => {
     getReceipes();
-  }, [query]);
+  }, [query]);    // update the query searched by user 
 
   const getReceipes = async () => {
     const response = await fetch(
